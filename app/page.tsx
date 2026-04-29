@@ -1,65 +1,162 @@
-import Image from "next/image";
+const projects = [
+  {
+    title: "Internal Resource Platform",
+    description:
+      "A centralized platform for managing resources, announcements, and support workflows across multiple locations.",
+    tags: ["Next.js", "React", "Role-Based Access"],
+    href: "/projects/internal-resource-platform",
+  },
+  {
+    title: "Hockey Game Tracker",
+    description:
+      "An interactive app for browsing games, filtering matchups, and highlighting the best game of the night.",
+    tags: ["React", "API Integration", "UI/UX"],
+    href: "/projects/hockey-game-tracker",
+  },
+  {
+    title: "Inday Website",
+    description:
+      "A responsive marketing website focused on clean layout, brand presentation, and a polished user experience.",
+    tags: ["Responsive Design", "Web Design", "Front-End"],
+    href: "/projects/inday-website",
+  },
+];
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
+    <main className="min-h-screen bg-[#0B0B0B] text-white">
+      <nav className="mx-auto flex max-w-5xl items-center justify-between px-6 py-6">
+        <a href="#" className="text-sm font-semibold tracking-wide">
+          Nicole Sedillo
+        </a>
+
+        <div className="flex gap-6 text-sm text-zinc-400">
+          <a href="#projects" className="transition hover:text-[#5EEAD4]">
+            Projects
+          </a>
+          <a href="#about" className="transition hover:text-[#5EEAD4]">
+            About
+          </a>
+          <a href="#contact" className="transition hover:text-[#5EEAD4]">
+            Contact
+          </a>
+        </div>
+      </nav>
+
+      <section className="mx-auto max-w-5xl px-6 py-24">
+        <p className="mb-5 text-sm font-medium text-[#5EEAD4]">
+          Front-End Developer
+        </p>
+
+        <h1 className="max-w-3xl text-5xl font-semibold tracking-tight text-white md:text-7xl">
+          I build clean, user-focused web applications.
+        </h1>
+
+        <p className="mt-6 max-w-2xl text-lg leading-8 text-zinc-400">
+          I design and develop intuitive interfaces using React and modern
+          tools, with a focus on real-world usability and performance.
+        </p>
+
+        <div className="mt-10 flex flex-wrap gap-4">
+          <a
+            href="#projects"
+            className="rounded-full bg-[#5EEAD4] px-5 py-3 text-sm font-semibold text-black transition hover:opacity-90"
+          >
+            View Projects
+          </a>
+
+          <a
+            href="#contact"
+            className="rounded-full border border-zinc-800 px-5 py-3 text-sm font-semibold text-white transition hover:border-[#5EEAD4] hover:text-[#5EEAD4]"
+          >
+            Contact Me
+          </a>
+        </div>
+
+        <p className="mt-8 text-sm text-zinc-500">
+          Currently building: Hockey Game Tracker 🏒
+        </p>
+      </section>
+
+      <section id="projects" className="mx-auto max-w-5xl px-6 py-20">
+        <div className="mb-10">
+          <p className="mb-3 text-sm font-medium text-[#5EEAD4]">Projects</p>
+          <h2 className="text-3xl font-semibold tracking-tight">
+            Featured work
+          </h2>
+        </div>
+
+        <div className="grid gap-5 md:grid-cols-2">
+          {projects.map((project) => (
             <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
+              href={project.href}
+              key={project.title}
+              className="group rounded-2xl border border-zinc-800 bg-[#111111] p-6 transition hover:-translate-y-1 hover:border-[#5EEAD4]"
             >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+              <h3 className="text-xl font-semibold">{project.title}</h3>
+
+              <p className="mt-3 leading-7 text-zinc-400">
+                {project.description}
+              </p>
+
+              <div className="mt-6 flex flex-wrap gap-2">
+                {project.tags.map((tag) => (
+                  <span
+                    key={tag}
+                    className="rounded-full border border-zinc-800 px-3 py-1 text-xs text-zinc-400"
+                  >
+                    {tag}
+                  </span>
+                ))}
+              </div>
+            </a>
+          ))}
+        </div>
+      </section>
+
+      <section id="about" className="mx-auto max-w-5xl px-6 py-20">
+        <p className="mb-3 text-sm font-medium text-[#5EEAD4]">About</p>
+
+        <h2 className="max-w-2xl text-3xl font-semibold tracking-tight">
+          I like turning messy workflows into simple, useful interfaces.
+        </h2>
+
+        <p className="mt-6 max-w-2xl leading-8 text-zinc-400">
+          I’m a front-end developer with experience building internal tools and
+          user-facing applications. I enjoy simplifying complex workflows and
+          creating interfaces that feel intuitive to use.
+        </p>
+      </section>
+
+      <section id="contact" className="mx-auto max-w-5xl px-6 py-20">
+        <div className="rounded-2xl border border-zinc-800 bg-[#111111] p-8">
+          <p className="mb-3 text-sm font-medium text-[#5EEAD4]">Contact</p>
+
+          <h2 className="text-3xl font-semibold tracking-tight">
+            Let’s build something useful.
+          </h2>
+
+          <p className="mt-4 text-zinc-400">
+            I’m open to front-end developer roles, internships, and junior
+            opportunities.
           </p>
+
+          <div className="mt-8 flex flex-wrap gap-4 text-sm">
+            <a
+              href="mailto:nicole.sedillo@gmail.com"
+              className="text-[#5EEAD4] hover:underline"
+            >
+              Email
+            </a>
+            <a href="https://www.linkedin.com/in/nicolesedillo/" className="text-[#5EEAD4] hover:underline">
+              LinkedIn
+            </a>
+            <a href="https://github.com/nicole-sedillo" className="text-[#5EEAD4] hover:underline">
+              GitHub
+            </a>
+          </div>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
+      </section>
+    </main>
   );
 }
