@@ -12,9 +12,12 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export const metadata: Metadata = {
-  title: "Nicole Sedillo's Portfolio",
-  description: "Nicole Sedillo's personal portfolio showcasing projects and skills.",
+export const metadata = {
+  title: "Nicole Sedillo",
+  description: "Front-end developer portfolio",
+  icons: {
+    icon: "/logo.png",
+  },
 };
 
 export default function RootLayout({
