@@ -6,9 +6,10 @@ export default function HockeyGameTrackerPage() {
       <section className="mx-auto max-w-4xl px-6 py-20">
         <a
           href="/"
-          className="mb-10 inline-block text-sm text-zinc-400 transition hover:text-[#5EEAD4]"
+          className="mb-10 inline-flex items-center gap-2 rounded-full border border-zinc-800 bg-white/[0.03] px-4 py-2 text-sm text-zinc-400 transition-all duration-200 [&:hover]:border-[#5EEAD4] [&:hover]:text-[#5EEAD4] [&:hover]:bg-[#5EEAD4]/5"
         >
-          ← Back to home
+          <span className="transition [&:hover]:-translate-x-0.5">←</span>
+          Back to home
         </a>
 
         <p className="mb-4 text-sm font-medium text-[#5EEAD4]">Case Study</p>
@@ -17,10 +18,19 @@ export default function HockeyGameTrackerPage() {
           Hockey Game Tracker
         </h1>
 
+        <div className="mt-4 flex items-center gap-2 text-xs">
+          <span className="rounded-full bg-[#5EEAD4]/10 px-3 py-1 text-[#5EEAD4]">
+            In Progress
+          </span>
+          <span className="text-zinc-500">
+            Actively being developed
+          </span>
+        </div>
+
         <p className="mt-6 text-lg leading-8 text-zinc-400">
-          A lightweight web app for browsing hockey matchups, filtering by
-          league, and quickly identifying the most interesting game of the
-          night.
+          A lightweight web app I’m currently building to help users browse hockey
+          matchups, filter by league, and quickly identify the most interesting game
+          of the night.
         </p>
 
         <HockeyAppPreview />
@@ -67,6 +77,17 @@ export default function HockeyGameTrackerPage() {
             <li>• Clean matchup cards with minimal UI clutter</li>
             <li>• Dynamic rendering based on API data</li>
           </ul>
+        </section>
+
+        <section className="mt-12">
+          <h2 className="text-2xl font-semibold">What I Focused On</h2>
+
+          <p className="mt-4 leading-8 text-zinc-400">
+            I focused on reducing visual clutter and helping users quickly decide what
+            game to watch. Instead of treating all games equally, the interface highlights
+            one key matchup and keeps the rest easily scannable. The goal was to turn raw
+            schedule data into a more useful and intentional experience.
+          </p>
         </section>
 
         <section className="mt-12">

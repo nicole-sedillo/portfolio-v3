@@ -4,9 +4,10 @@ export default function IndayWebsitePage() {
       <section className="mx-auto max-w-4xl px-6 py-20">
         <a
           href="/"
-          className="mb-10 inline-block text-sm text-zinc-400 transition hover:text-[#5EEAD4]"
+          className="mb-10 inline-flex items-center gap-2 rounded-full border border-zinc-800 bg-white/[0.03] px-4 py-2 text-sm text-zinc-400 transition-all duration-200 [&:hover]:border-[#5EEAD4] [&:hover]:text-[#5EEAD4] [&:hover]:bg-[#5EEAD4]/5"
         >
-          ← Back to home
+          <span className="transition [&:hover]:-translate-x-0.5">←</span>
+          Back to home
         </a>
 
         <p className="mb-4 text-sm font-medium text-[#5EEAD4]">
@@ -96,22 +97,13 @@ export default function IndayWebsitePage() {
           </div>
         </div>
 
-        <section className="mt-16">
-          <h2 className="text-2xl font-semibold">Overview</h2>
-          <p className="mt-4 leading-8 text-zinc-400">
-            This project focused on building a clean and modern website
-            that highlights branding and content in a visually engaging
-            way. The goal was to create a simple, responsive experience
-            that works well across devices.
-          </p>
-        </section>
-
         <section className="mt-12">
           <h2 className="text-2xl font-semibold">The Goal</h2>
           <p className="mt-4 leading-8 text-zinc-400">
-            Many small business or brand websites struggle with cluttered
-            layouts and inconsistent design. The challenge was to present
-            information clearly while maintaining a cohesive visual style.
+            The goal was to create a clean, visually consistent website that presents
+            content clearly without feeling cluttered. Working within Squarespace, I
+            extended the default templates using custom CSS and JavaScript to overcome
+            layout limitations and deliver a more refined user experience.
           </p>
         </section>
 

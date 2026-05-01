@@ -227,10 +227,7 @@ export default function Home() {
                   <p className="text-xs uppercase tracking-wide text-zinc-500">
                     Build Style
                   </p>
-                  <p className="mt-2 text-3xl font-semibold">Two-Way UI</p>
-                  <p className="mt-2 text-sm text-zinc-500">
-                    Clean visuals with practical workflows
-                  </p>
+                  <p className="mt-2 text-3xl font-semibold">Clean + Practical UI</p>
                 </div>
 
                 <div className="rounded-2xl border border-zinc-800 bg-black/40 p-6 backdrop-blur">
@@ -238,7 +235,6 @@ export default function Home() {
                     Home Base
                   </p>
                   <p className="mt-2 text-3xl font-semibold">Vancouver, Canada</p>
-        
                 </div>
               </div>
             </div>

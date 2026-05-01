@@ -6,9 +6,10 @@ export default function InternalResourcePlatformPage() {
       <section className="mx-auto max-w-4xl px-6 py-20">
         <a
           href="/"
-          className="mb-10 inline-block text-sm text-zinc-400 transition hover:text-[#5EEAD4]"
+          className="mb-10 inline-flex items-center gap-2 rounded-full border border-zinc-800 bg-white/[0.03] px-4 py-2 text-sm text-zinc-400 transition-all duration-200 [&:hover]:border-[#5EEAD4] [&:hover]:text-[#5EEAD4] [&:hover]:bg-[#5EEAD4]/5"
         >
-          ← Back to home
+          <span className="transition [&:hover]:-translate-x-0.5">←</span>
+          Back to home
         </a>
 
         <p className="mb-4 text-sm font-medium text-[#5EEAD4]">
@@ -43,16 +44,6 @@ export default function InternalResourcePlatformPage() {
             <p className="mt-1 text-white">Internal tools, RBAC, UX</p>
           </div>
         </div>
-
-        <section className="mt-16">
-          <h2 className="text-2xl font-semibold">Overview</h2>
-          <p className="mt-4 leading-8 text-zinc-400">
-            This project focused on building a centralized internal platform to replace
-            scattered resources, email-based communication, and unclear support workflows.
-            The goal was to create a single place where teams could access information,
-            stay informed, and submit requests more efficiently.
-          </p>
-        </section>
 
         <section className="mt-12">
           <h2 className="text-2xl font-semibold">The Problem</h2>
@@ -140,15 +131,25 @@ export default function InternalResourcePlatformPage() {
                 to reduce friction, improve clarity, and make key actions accessible without
                 requiring additional training.
               </p>
+
+              <p className="mt-4 leading-8 text-zinc-400">
+                To support development and testing, I used Docker to run a local database and
+                simulate a production-like environment. This helped surface issues early and
+                ensured more reliable behavior during development.
+              </p>
+
+              <p className="mt-4 leading-8 text-zinc-400">
+                I also created simple onboarding materials to help users understand how to
+                navigate the system, reducing friction and improving adoption across teams.
+              </p>
             </section>
 
             <section className="mt-12">
               <h2 className="text-2xl font-semibold">What I Would Improve Next</h2>
 
               <ul className="mt-4 space-y-3 leading-8 text-zinc-400">
-                <li>• Improve UI and navigation in the resource library</li>
-                <li>• Add stronger filtering and sorting for the resource library</li>
-                <li>• Refine support ticket routing based on category, role, and location</li>
+                <li>• Improve the resource library UI to make navigation, filtering, and content discovery more intuitive</li>
+                <li>• Refine the support ticket interface to improve clarity, reduce friction, and make key actions more intuitive</li>
               </ul>
             </section>
 
