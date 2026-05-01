@@ -26,7 +26,16 @@ export default function InternalResourcePlatformPage() {
           place.
         </p>
 
+        <p className="mt-10 mb-2 text-xs uppercase tracking-wide text-zinc-500">
+          Preview
+        </p>
+
         <PortalPreview />
+
+        <p className="mt-4 text-sm text-zinc-500">
+          This preview is a simplified, anonymized representation of the internal tool.
+          It recreates the structure and functionality without using real data.
+        </p>
 
         <div className="mt-10 grid gap-4 border-y border-zinc-800 py-6 md:grid-cols-3">
           <div>
