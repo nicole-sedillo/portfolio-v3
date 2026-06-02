@@ -100,45 +100,84 @@ export default function IndayWebsitePage() {
         <section className="mt-12">
           <h2 className="text-2xl font-semibold">The Goal</h2>
           <p className="mt-4 leading-8 text-zinc-400">
-            The goal was to create a clean, visually consistent website that presents
-            content clearly without feeling cluttered. Working within Squarespace, I
-            extended the default templates using custom CSS and JavaScript to overcome
-            layout limitations and deliver a more refined user experience.
+            The goal was to create a clean, visually consistent website that presented content clearly while remaining easy to navigate across devices. Working within Squarespace, I used custom CSS and JavaScript to extend the platform's default capabilities and create a more tailored user experience.
+          </p>
+        </section>
+
+        <section className="mt-12">
+          <h2 className="text-2xl font-semibold">My Role</h2>
+          <p className="mt-4 leading-8 text-zinc-400">
+            I was responsible for customizing the website's layout, improving content organization, and enhancing the user experience beyond what was possible with the default Squarespace templates.
           </p>
         </section>
 
         <section className="mt-12">
           <h2 className="text-2xl font-semibold">What I Built</h2>
 
-          <ul className="mt-4 space-y-3 leading-8 text-zinc-400">
-            <li>• Customized Squarespace templates using CSS and JavaScript</li>
-            <li>• Built responsive layouts for mobile and desktop</li>
-            <li>• Improved navigation and content structure</li>
-            <li>• Enhanced UI components beyond default platform limitations</li>
-          </ul>
+          <div className="mt-6 space-y-6">
+            <div>
+              <h3 className="font-semibold text-white">
+                Custom Front-End Enhancements
+              </h3>
+              <p className="mt-2 text-zinc-400">
+                Used custom CSS and JavaScript to extend Squarespace functionality and create more flexible, polished layouts.
+              </p>
+            </div>
+
+            <div>
+              <h3 className="font-semibold text-white">
+                Responsive Design
+              </h3>
+              <p className="mt-2 text-zinc-400">
+                Built responsive experiences that adapted seamlessly across desktop, tablet, and mobile devices.
+              </p>
+            </div>
+
+            <div>
+              <h3 className="font-semibold text-white">
+                Content Structure & Navigation
+              </h3>
+              <p className="mt-2 text-zinc-400">
+                Improved content organization and navigation to help visitors find information more easily and create a clearer user journey.
+              </p>
+            </div>
+
+            <div>
+              <h3 className="font-semibold text-white">
+                UI Refinements
+              </h3>
+              <p className="mt-2 text-zinc-400">
+                Enhanced interface elements and page layouts to better support the brand's visual identity and improve overall usability.
+              </p>
+            </div>
+          </div>
         </section>
 
         <section className="mt-12">
-        <h2 className="text-2xl font-semibold">What I Would Improve Next</h2>
-
-        <ul className="mt-4 space-y-3 leading-8 text-zinc-400">
-          <li>• Continue refining mobile spacing and page transitions</li>
-          <li>• Improve page speed by auditing images and third-party scripts</li>
-          <li>• Add stronger SEO metadata for key pages</li>
-          <li>• Create more reusable content sections for future updates</li>
-        </ul>
-      </section>
+          <h2 className="text-2xl font-semibold">Design Approach</h2>
+          <p className="mt-4 leading-8 text-zinc-400">
+            My focus was on balancing aesthetics with usability. Rather than simply customizing templates, I looked at how content was presented, how users would move through the site, and how the website could better communicate the brand online.
+          </p>
+        </section>
 
         <section className="mt-12">
-        <h2 className="text-2xl font-semibold">What I learned</h2>
+          <h2 className="text-2xl font-semibold">What I Learned</h2>
+          <p className="mt-4 leading-8 text-zinc-400">
+            This project reinforced the importance of understanding platform constraints and finding creative solutions within them. By extending Squarespace with custom code, I was able to create a more intentional and flexible user experience while maintaining the ease of use that makes the platform valuable for clients.
+          </p>
+        </section>
 
-        <p className="mt-4 leading-8 text-zinc-400">
-          This project taught me how to work within platform constraints while still
-          delivering a polished user experience. By extending Squarespace with custom
-          CSS and JavaScript, I was able to move beyond template limitations and build
-          more flexible, intentional layouts.
-        </p>
-      </section>
+        <section className="mt-12">
+          <h2 className="text-2xl font-semibold">Next Improvements</h2>
+
+          <ul className="mt-4 space-y-3 leading-8 text-zinc-400">
+            <li>• Continue refining mobile layouts and spacing based on user feedback and real-world usage</li>
+            <li>• Conduct stakeholder reviews to identify opportunities for improving content structure and user journeys</li>
+            <li>• Improve page performance through image optimization and third-party script auditing</li>
+            <li>• Strengthen SEO foundations with enhanced metadata, page structure, and content optimization</li>
+            <li>• Create additional reusable content sections to make future updates easier and more scalable</li>
+          </ul>
+        </section>
       </section>
     </main>
   );

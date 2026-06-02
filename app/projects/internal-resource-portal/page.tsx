@@ -55,16 +55,22 @@ export default function InternalResourcePlatformPage() {
         </div>
 
         <section className="mt-12">
-          <h2 className="text-2xl font-semibold">The Problem</h2>
+          <h2 className="text-2xl font-semibold">The Challenge</h2>
           <p className="mt-4 leading-8 text-zinc-400">
-            Information was spread across multiple sources, including emails, shared
-            drives, and informal communication. This made it difficult for teams to find
-            resources quickly, stay up to date, and submit requests in a consistent way.
+            Company resources, announcements, and internal requests were spread across multiple systems, including email, shared drives, and informal communication channels. This made it difficult for employees to locate information, stay informed, and submit requests consistently.
           </p>
         </section>
 
         <section className="mt-12">
-          <h2 className="text-2xl font-semibold">Key Features</h2>
+          <h2 className="text-2xl font-semibold">My Role</h2>
+          <p className="mt-4 leading-8 text-zinc-400">
+            As part of the portal development team, I contributed to front-end development, UX improvements, stakeholder feedback gathering, and workflow design. 
+            My work focused on making information easier to find, simplifying user interactions, and helping translate operational processes into intuitive interfaces.
+          </p>
+        </section>
+
+        <section className="mt-12">
+          <h2 className="text-2xl font-semibold">Key Contributions</h2>
 
           <div className="mt-6 space-y-6">
             <div>
@@ -72,18 +78,22 @@ export default function InternalResourcePlatformPage() {
                 Resource Library
               </h3>
               <p className="mt-2 text-zinc-400">
-                Organized resources into categories and tags to reduce reliance on
-                scattered files and make important documents easier to find.
+                Contributed to the design and implementation of a centralized resource library that organized content using categories, tags, and search functionality.
+              </p>
+              <p className="mt-2 text-zinc-400">
+                This reduced reliance on scattered files and improved access to important company resources.
               </p>
             </div>
 
             <div>
               <h3 className="font-semibold text-white">
-                Announcement System
+                Announcements
               </h3>
               <p className="mt-2 text-zinc-400">
-                Built a structured way to share updates, allowing information to reach
-                the right users without relying on manual communication.
+                Helped create a structured announcement system that allowed updates to be shared consistently across the organization.
+              </p>
+              <p className="mt-2 text-zinc-400">
+                The goal was to reduce dependency on manual communication and improve visibility of important information.
               </p>
             </div>
 
@@ -92,18 +102,16 @@ export default function InternalResourcePlatformPage() {
                 Support Requests
               </h3>
               <p className="mt-2 text-zinc-400">
-                Replaced informal requests with a more consistent system for submitting
-                and tracking internal issues.
+                Contributed to the interface for submitting and tracking internal requests, helping replace informal processes with a more consistent workflow.
               </p>
             </div>
 
             <div>
               <h3 className="font-semibold text-white">
-                Role-Based Access
+                User Experience & Navigation
               </h3>
               <p className="mt-2 text-zinc-400">
-                Designed the interface with different user roles in mind, ensuring
-                content and actions were appropriate for each type of user.
+                Improved navigation patterns, content organization, and information architecture to help users locate resources and complete tasks more efficiently.
               </p>
             </div>
           </div>
@@ -159,6 +167,7 @@ export default function InternalResourcePlatformPage() {
               <ul className="mt-4 space-y-3 leading-8 text-zinc-400">
                 <li>• Improve the resource library UI to make navigation, filtering, and content discovery more intuitive</li>
                 <li>• Refine the support ticket interface to improve clarity, reduce friction, and make key actions more intuitive</li>
+                <li>• Gather additional user feedback after rollout to identify usability improvements and prioritize future enhancements based on real-world usage.</li>
               </ul>
             </section>
 

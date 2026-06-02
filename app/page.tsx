@@ -56,13 +56,12 @@ export default function Home() {
           Front-End Developer
         </p>
 
-        <h1 className="relative max-w-4xl text-5xl font-semibold leading-tight tracking-tight md:text-7xl">
-          I build clean, structured interfaces for real-world workflows.
+        <h1 className="relative max-w-4xl text-4xl font-semibold leading-tight tracking-tight md:text-5xl">
+          I build responsive websites and web applications focused on usability, clarity, and user experience.
         </h1>
 
         <p className="mt-6 max-w-2xl text-lg leading-8 text-zinc-400">
-          I’m focused on product UI, internal tools, and thoughtful web
-          experiences that make complex information easier to use.
+          My background in marketing and business helps me bridge the gap between technical implementation and the goals of the people using the product.
         </p>
 
         <div className="mt-10 flex flex-wrap gap-4">
@@ -84,6 +83,64 @@ export default function Home() {
         <p className="mt-8 text-sm text-zinc-500">
           Currently building: Hockey Game Tracker 🏒
         </p>
+      </section>
+
+      <section className="mx-auto max-w-6xl px-6 pb-20 pt-4">
+        <div className="mb-10 max-w-2xl">
+          <p className="mb-3 text-sm font-medium text-[#5EEAD4]">
+            Process
+          </p>
+          <h2 className="text-3xl font-semibold tracking-tight md:text-4xl">
+            My Process
+          </h2>
+        </div>
+
+        <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+          <div className="rounded-2xl border border-zinc-800 bg-[#111111] p-6">
+            <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-full bg-[#5EEAD4] text-sm font-bold text-black">
+              1
+            </div>
+            <h3 className="mb-2 text-lg font-semibold">
+              Understand the business and audience
+            </h3>
+          </div>
+
+          <div className="rounded-2xl border border-zinc-800 bg-[#111111] p-6">
+            <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-full bg-[#5EEAD4] text-sm font-bold text-black">
+              2
+            </div>
+            <h3 className="mb-2 text-lg font-semibold">
+              Identify user needs and pain points
+            </h3>
+          </div>
+
+          <div className="rounded-2xl border border-zinc-800 bg-[#111111] p-6">
+            <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-full bg-[#5EEAD4] text-sm font-bold text-black">
+              3
+            </div>
+            <h3 className="mb-2 text-lg font-semibold">
+              Plan the content and user journey
+            </h3>
+          </div>
+
+          <div className="rounded-2xl border border-zinc-800 bg-[#111111] p-6">
+            <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-full bg-[#5EEAD4] text-sm font-bold text-black">
+              4
+            </div>
+            <h3 className="mb-2 text-lg font-semibold">
+              Design and build the solution
+            </h3>
+          </div>
+
+          <div className="rounded-2xl border border-zinc-800 bg-[#111111] p-6">
+            <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-full bg-[#5EEAD4] text-sm font-bold text-black">
+              5
+            </div>
+            <h3 className="mb-2 text-lg font-semibold">
+              Test, refine, and improve
+            </h3>
+          </div>
+        </div>
       </section>
 
       <section id="projects" className="mx-auto max-w-6xl px-6 py-20">

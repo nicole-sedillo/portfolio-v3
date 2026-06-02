@@ -59,57 +59,99 @@ export default function HockeyGameTrackerPage() {
 
         <section className="mt-16">
           <h2 className="text-2xl font-semibold">The Idea</h2>
-
           <p className="mt-4 leading-8 text-zinc-400">
-            Most sports apps present schedules as long, cluttered lists without
-            helping users decide what to watch. I wanted to create a simpler
-            interface that highlights the most relevant matchup instead of just
-            displaying everything equally.
+            Most sports apps present schedules as long lists of games, leaving users to sort through the information themselves. I wanted to explore a different approach by creating an experience that helps users quickly decide what to watch instead of simply displaying every game equally.
           </p>
         </section>
 
         <section className="mt-12">
-          <h2 className="text-2xl font-semibold">Key Features</h2>
+          <h2 className="text-2xl font-semibold">My Role</h2>
+          <p className="mt-4 leading-8 text-zinc-400">
+            This is an ongoing personal project where I am responsible for product planning, front-end development, API integration, and user experience design.
+          </p>
+          <p className="mt-4 leading-8 text-zinc-400">
+            The project allows me to explore how data can be transformed into a more intentional and decision-focused experience for sports fans.
+          </p>
+        </section>
+
+        <section className="mt-12">
+          <h2 className="text-2xl font-semibold">What I've Built</h2>
+
+          <div className="mt-6 space-y-6">
+            <div>
+              <h3 className="font-semibold text-white">
+                Multi-League Support
+              </h3>
+              <p className="mt-2 text-zinc-400">
+                Integrated live schedule data from NHL and PWHL APIs, allowing users to browse games across multiple leagues.
+              </p>
+            </div>
+
+            <div>
+              <h3 className="font-semibold text-white">
+                Game Discovery
+              </h3>
+              <p className="mt-2 text-zinc-400">
+                Implemented league filtering and matchup views to help users quickly navigate available games.
+              </p>
+            </div>
+
+            <div>
+              <h3 className="font-semibold text-white">
+                Featured Matchup Experience
+              </h3>
+              <p className="mt-2 text-zinc-400">
+                Developed a "Best Game Tonight" feature that highlights a recommended matchup instead of presenting all games with equal emphasis.
+              </p>
+            </div>
+
+            <div>
+              <h3 className="font-semibold text-white">
+                Dynamic Data Rendering
+              </h3>
+              <p className="mt-2 text-zinc-400">
+                Built reusable components that dynamically render game information from live API data.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section className="mt-12">
+          <h2 className="text-2xl font-semibold">Design Approach</h2>
+          <p className="mt-4 leading-8 text-zinc-400">
+            My focus has been on reducing visual clutter and prioritizing the information users care about most.
+          </p>
+          <p className="mt-4 leading-8 text-zinc-400">
+            Rather than displaying raw schedule data, I wanted the interface to help answer a simple question:
+          </p>
+          <p className="mt-4 text-xl font-semibold text-white">
+            "What game should I watch tonight?"
+          </p>
+          <p className="mt-4 leading-8 text-zinc-400">
+            This led to a design that emphasizes one featured matchup while keeping the remaining games easy to browse and compare.
+          </p>
+        </section>
+
+        <section className="mt-12">
+          <h2 className="text-2xl font-semibold">What I've Learned</h2>
+          <p className="mt-4 leading-8 text-zinc-400">
+            This project has helped me think beyond displaying API data and focus more on product thinking and user decision-making.
+          </p>
+          <p className="mt-4 leading-8 text-zinc-400">
+            As new features are added, I've gained experience balancing technical implementation with usability, information hierarchy, and interface design.
+          </p>
+        </section>
+
+        <section className="mt-12">
+          <h2 className="text-2xl font-semibold">Next Improvements</h2>
 
           <ul className="mt-4 space-y-3 leading-8 text-zinc-400">
-            <li>• League-based filtering for NHL and PWHL games</li>
-            <li>• “Best Game Tonight” highlight logic</li>
-            <li>• Clean matchup cards with minimal UI clutter</li>
-            <li>• Dynamic rendering based on API data</li>
+            <li>• Refine the matchup recommendation logic to create more meaningful "Best Game" selections</li>
+            <li>• Add favourite teams and personalized viewing preferences</li>
+            <li>• Improve loading, error, and empty states for a more resilient user experience</li>
+            <li>• Gather feedback from hockey fans to better understand how they discover and choose games</li>
+            <li>• Continue iterating on new features and interface improvements based on user needs and real-world usage</li>
           </ul>
-        </section>
-
-        <section className="mt-12">
-          <h2 className="text-2xl font-semibold">What I Focused On</h2>
-
-          <p className="mt-4 leading-8 text-zinc-400">
-            I focused on reducing visual clutter and helping users quickly decide what
-            game to watch. Instead of treating all games equally, the interface highlights
-            one key matchup and keeps the rest easily scannable. The goal was to turn raw
-            schedule data into a more useful and intentional experience.
-          </p>
-        </section>
-
-        <section className="mt-12">
-          <h2 className="text-2xl font-semibold">What I Would Improve Next</h2>
-
-          <ul className="mt-4 space-y-3 leading-8 text-zinc-400">
-            <li>• Add stronger matchup scoring logic for the “Best Game” feature</li>
-            <li>• Improve empty states when no games are available</li>
-            <li>• Add favourite team preferences</li>
-            <li>• Add loading and error states for API requests</li>
-          </ul>
-        </section>
-
-        <section className="mt-12">
-          <h2 className="text-2xl font-semibold">What I Learned</h2>
-
-          <p className="mt-4 leading-8 text-zinc-400">
-            This project helped me think beyond displaying API data and focus on
-            how users make decisions. By highlighting one recommended matchup
-            and keeping the interface simple, I practiced turning raw schedule
-            data into a more useful product experience.
-          </p>
         </section>
       </section>
     </main>

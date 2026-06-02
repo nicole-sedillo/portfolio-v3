@@ -24,7 +24,10 @@ const games = [
 
 export default function HockeyAppPreview() {
   return (
-    <div className="mt-10 rounded-2xl border border-zinc-800 bg-[#111111] p-6">
+    <div className="mt-10 rounded-2xl border border-zinc-800 bg-[#111111] p-6" 
+     style={{
+       '--hockey-cursor': `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'%3E%3Ctext x='4' y='28' font-size='24' style='user-select: none;'%3E🏒%3C/text%3E%3C/svg%3E"), pointer`
+     } as React.CSSProperties}>
       <div className="flex flex-wrap items-end justify-between gap-4">
         <div>
           <p className="text-sm font-medium text-[#5EEAD4]">
@@ -39,13 +42,22 @@ export default function HockeyAppPreview() {
         </div>
 
         <div className="flex gap-2 text-xs">
-          <button className="rounded-full bg-[#5EEAD4] px-3 py-1.5 font-semibold text-black transition hover:scale-105 hover:opacity-90">
+          <button 
+            className="rounded-full bg-[#5EEAD4] px-3 py-1.5 font-semibold text-black transition hover:scale-105 hover:opacity-90"
+            style={{ cursor: 'var(--hockey-cursor)' }}
+          >
             All
           </button>
-          <button className="rounded-full border border-zinc-800 px-3 py-1.5 text-zinc-400 transition hover:border-[#5EEAD4] hover:text-[#5EEAD4]">
+          <button 
+            className="rounded-full border border-zinc-800 px-3 py-1.5 text-zinc-400 transition hover:border-[#5EEAD4] hover:text-[#5EEAD4]"
+            style={{ cursor: 'var(--hockey-cursor)' }}
+          >
             NHL
           </button>
-          <button className="rounded-full border border-zinc-800 px-3 py-1.5 text-zinc-400 transition hover:border-[#5EEAD4] hover:text-[#5EEAD4]">
+          <button 
+            className="rounded-full border border-zinc-800 px-3 py-1.5 text-zinc-400 transition hover:border-[#5EEAD4] hover:text-[#5EEAD4]"
+            style={{ cursor: 'var(--hockey-cursor)' }}
+          >
             PWHL
           </button>
         </div>
@@ -75,7 +87,8 @@ export default function HockeyAppPreview() {
         {games.map((game) => (
           <div
             key={`${game.awayTeam}-${game.homeTeam}`}
-            className="group flex cursor-pointer items-center justify-between rounded-xl border border-zinc-800 bg-[#0B0B0B] p-4 transition-all duration-300 ease-out [&:hover]:scale-[1.03] [&:hover]:border-[#5EEAD4] [&:hover]:bg-zinc-800 [&:hover]:shadow-xl [&:hover]:shadow-[#5EEAD4]/20"
+            className="game-card group flex cursor-pointer items-center justify-between rounded-xl border border-zinc-800 bg-[#0B0B0B] p-4 transition-all duration-300 ease-out [&:hover]:scale-[1.03] [&:hover]:border-[#5EEAD4] [&:hover]:bg-zinc-800 [&:hover]:shadow-xl [&:hover]:shadow-[#5EEAD4]/20"
+            style={{ cursor: 'var(--hockey-cursor)' }}
           >
             <div>
               <div className="flex items-center gap-3">
