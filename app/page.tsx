@@ -259,14 +259,11 @@ export default function Home() {
               <p className="mb-3 text-sm font-medium text-[#5EEAD4]">About</p>
 
               <h2 className="max-w-2xl text-3xl font-semibold tracking-tight md:text-4xl">
-                Product-minded front-end developer with a soft spot for clean
-                systems.
+                I'm a front-end developer who enjoys solving problems through thoughtful design and development.
               </h2>
 
               <p className="mt-5 max-w-2xl leading-8 text-zinc-400">
-                I like turning messy workflows into simple, useful interfaces.
-                My work combines UI detail, real-world constraints, and a focus
-                on making tools easier to use.
+                With a background in business and marketing, I approach projects by considering both the user experience and the goals behind the product. I enjoy building websites, web applications, and internal tools that make information easier to navigate and workflows easier to manage.
               </p>
 
               <div className="mt-10 grid gap-4 md:grid-cols-3">
@@ -308,8 +305,7 @@ export default function Home() {
           </h2>
 
           <p className="mt-4 max-w-xl leading-7 text-zinc-400">
-            I’m open to front-end developer roles, junior opportunities, and
-            teams where I can keep growing through real product work.
+            I'm currently looking for front-end and web development opportunities where I can keep learning, contribute to real products, and work alongside experienced teams.
           </p>
 
           <div className="mt-8 flex flex-wrap gap-4 text-sm">
