@@ -43,6 +43,9 @@ export default function Home() {
           <a href="#about" className="transition [&:hover]:text-[#5EEAD4]">
             About
           </a>
+          <a href="/blog" className="transition [&:hover]:text-[#5EEAD4]">
+            Blog
+          </a>
           <a href="#contact" className="transition [&:hover]:text-[#5EEAD4]">
             Contact
           </a>
