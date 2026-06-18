@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { getAllPosts } from "@/lib/posts";
+import Navbar from "@/components/Navbar";
 
 export const metadata = {
   title: "Blog | Nicole Sedillo",
@@ -10,18 +11,8 @@ export default function BlogPage() {
   const posts = getAllPosts();
 
   return (
-    <main className="min-h-screen bg-[#0B0B0B] text-white">
-      <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-6">
-        <Link href="/" className="text-sm font-semibold tracking-wide">
-          Nicole Sedillo
-        </Link>
-        <div className="flex gap-6 text-sm text-zinc-400">
-          <Link href="/#projects" className="transition [&:hover]:text-[#5EEAD4]">Projects</Link>
-          <Link href="/#about" className="transition [&:hover]:text-[#5EEAD4]">About</Link>
-          <Link href="/blog" className="transition [&:hover]:text-[#5EEAD4]">Blog</Link>
-          <Link href="/#contact" className="transition [&:hover]:text-[#5EEAD4]">Contact</Link>
-        </div>
-      </nav>
+    <main className="min-h-screen relative bg-[#0B0B0B] text-white">
+      <Navbar />
 
       <section className="mx-auto max-w-6xl px-6 py-16">
         <p className="mb-3 text-sm font-medium text-[#5EEAD4]">Writing</p>

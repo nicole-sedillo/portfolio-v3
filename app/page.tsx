@@ -1,3 +1,5 @@
+import Navbar from "@/components/Navbar";
+
 const projects = [
   {
     title: "Internal Resource Portal",
@@ -30,28 +32,8 @@ const projects = [
 
 export default function Home() {
   return (
-    <main className="min-h-screen overflow-hidden bg-[#0B0B0B] text-white">
-      <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-6">
-        <a href="#" className="text-sm font-semibold tracking-wide">
-          Nicole Sedillo
-        </a>
-
-        <div className="flex gap-6 text-sm text-zinc-400">
-          <a href="#projects" className="transition [&:hover]:text-[#5EEAD4]">
-            Projects
-          </a>
-          <a href="#about" className="transition [&:hover]:text-[#5EEAD4]">
-            About
-          </a>
-          <a href="/blog" className="transition [&:hover]:text-[#5EEAD4]">
-            Blog
-          </a>
-          <a href="#contact" className="transition [&:hover]:text-[#5EEAD4]">
-            Contact
-          </a>
-        </div>
-      </nav>
-
+    <main className="min-h-screen relative bg-[#0B0B0B] text-white">
+      <Navbar />
       <section className="relative mx-auto max-w-6xl px-6 py-24 md:py-32">
         <div className="pointer-events-none absolute right-0 top-20 h-64 w-64 rounded-full bg-[#5EEAD4]/10 blur-3xl" />
 

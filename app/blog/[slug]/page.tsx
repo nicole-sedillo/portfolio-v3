@@ -1,6 +1,8 @@
 import Link from "next/link";
 import { getPostBySlug, getAllPosts } from "@/lib/posts";
 import { MDXRemote } from "next-mdx-remote/rsc";
+import navbar from "@/components/Navbar";
+import Navbar from "@/components/Navbar";
 
 export async function generateStaticParams() {
   const posts = getAllPosts();
@@ -21,18 +23,8 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
   const post = getPostBySlug(slug);
 
   return (
-    <main className="min-h-screen bg-[#0B0B0B] text-white">
-      <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-6">
-        <Link href="/" className="text-sm font-semibold tracking-wide">
-          Nicole Sedillo
-        </Link>
-        <div className="flex gap-6 text-sm text-zinc-400">
-          <Link href="/#projects" className="transition [&:hover]:text-[#5EEAD4]">Projects</Link>
-          <Link href="/#about" className="transition [&:hover]:text-[#5EEAD4]">About</Link>
-          <Link href="/blog" className="transition [&:hover]:text-[#5EEAD4]">Blog</Link>
-          <Link href="/#contact" className="transition [&:hover]:text-[#5EEAD4]">Contact</Link>
-        </div>
-      </nav>
+    <main className="min-h-screen relative bg-[#0B0B0B] text-white">
+      <Navbar />
 
       <article className="mx-auto max-w-3xl px-6 py-16">
         <Link
