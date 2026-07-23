@@ -17,7 +17,7 @@ export default function BlogPage() {
       <section className="mx-auto max-w-6xl px-6 py-16">
         <p className="mb-3 text-sm font-medium text-[#5EEAD4]">Writing</p>
         <h1 className="mb-4 text-4xl font-semibold tracking-tight md:text-5xl">Blog</h1>
-        <p className="mb-12 max-w-xl text-lg text-zinc-400">
+        <p className="mb-12 max-w-2xl text-lg text-zinc-400">
           Thoughts on front-end development, building things, and learning in public.
         </p>
 
