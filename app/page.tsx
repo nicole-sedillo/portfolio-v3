@@ -65,9 +65,6 @@ export default function Home() {
           </a>
         </div>
 
-        <p className="mt-8 text-sm text-zinc-500">
-          Currently building: Hockey Game Tracker 🏒
-        </p>
       </section>
 
       <section className="mx-auto max-w-6xl px-6 pb-20 pt-4">
