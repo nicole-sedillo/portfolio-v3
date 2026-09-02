@@ -18,12 +18,23 @@ export default function HockeyGameTrackerPage() {
           Hockey Game Tracker
         </h1>
 
+        <div className="mt-6 flex gap-6">
+          <a
+            href="https://puckbook.nicolesedillo.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 rounded-full bg-[#5EEAD4] px-5 py-2.5 text-sm font-semibold text-black transition hover:bg-[#4dd4c4]"
+          >
+            Visit Live Site →
+          </a>
+        </div>
+
         <div className="mt-4 flex items-center gap-2 text-xs">
           <span className="rounded-full bg-[#5EEAD4]/10 px-3 py-1 text-[#5EEAD4]">
             In Progress
           </span>
           <span className="text-zinc-500">
-            Actively being developed
+            V1 is out and live, but I’m continuing to iterate on the design and add new features.
           </span>
         </div>
 
@@ -43,35 +54,37 @@ export default function HockeyGameTrackerPage() {
         <div className="mt-10 grid gap-4 border-y border-zinc-800 py-6 md:grid-cols-3">
           <div>
             <p className="text-sm text-zinc-500">Role</p>
-            <p className="mt-1 text-white">Front-End Developer</p>
+            <p className="mt-1 text-white">Full-Stack Developer</p>
           </div>
 
           <div>
             <p className="text-sm text-zinc-500">Stack</p>
-            <p className="mt-1 text-white">React, Next.js</p>
+            <p className="mt-1 text-white">React, Next.js, TypeScript, Supabase, Tailwind CSS</p>
           </div>
 
           <div>
             <p className="text-sm text-zinc-500">Focus</p>
-            <p className="mt-1 text-white">API, UI/UX, Filtering</p>
+            <p className="mt-1 text-white">API Integration, Authentication, UI/UX, Responsive Design</p>
           </div>
         </div>
 
         <section className="mt-16">
           <h2 className="text-2xl font-semibold">The Idea</h2>
           <p className="mt-4 leading-8 text-zinc-400">
-            Most sports apps present schedules as long lists of games, leaving users to sort through the information themselves. I wanted to explore a different approach by creating an experience that helps users quickly decide what to watch instead of simply displaying every game equally.
+            Most sports apps present schedules as long lists of games, leaving users to sort through the information themselves. I wanted to explore a different approach by creating an experience that helps users quickly decide what to watch instead of simply displaying every game equally. Puckbook brings NHL and PWHL games into one experience, combining game discovery with features like a recommended matchup and calendar-based browsing.
           </p>
         </section>
 
         <section className="mt-12">
           <h2 className="text-2xl font-semibold">My Role</h2>
           <p className="mt-4 leading-8 text-zinc-400">
-            This is an ongoing personal project where I am responsible for product planning, front-end development, API integration, and user experience design.
+            This is an ongoing personal project where I am responsible for product planning, full-stack development, API integration, authentication, UI/UX, and deployment.
+
+I built the application with Next.js and React, integrated live hockey data from multiple APIs, implemented authentication and protected functionality with Supabase, and deployed the application to production with Vercel.
+
+The project allows me to explore how live sports data can be transformed into a more intentional and decision-focused experience for fans while continuing to build my experience with production-ready web applications.
           </p>
-          <p className="mt-4 leading-8 text-zinc-400">
-            The project allows me to explore how data can be transformed into a more intentional and decision-focused experience for sports fans.
-          </p>
+         
         </section>
 
         <section className="mt-12">
@@ -83,7 +96,7 @@ export default function HockeyGameTrackerPage() {
                 Multi-League Support
               </h3>
               <p className="mt-2 text-zinc-400">
-                Integrated live schedule data from NHL and PWHL APIs, allowing users to browse games across multiple leagues.
+                Integrated live schedule data from NHL and PWHL APIs, allowing users to browse games across multiple leagues from a unified interface.
               </p>
             </div>
 
@@ -92,7 +105,7 @@ export default function HockeyGameTrackerPage() {
                 Game Discovery
               </h3>
               <p className="mt-2 text-zinc-400">
-                Implemented league filtering and matchup views to help users quickly navigate available games.
+                Implemented league filtering and matchup views to help users quickly navigate upcoming and recent games.
               </p>
             </div>
 
@@ -101,16 +114,70 @@ export default function HockeyGameTrackerPage() {
                 Featured Matchup Experience
               </h3>
               <p className="mt-2 text-zinc-400">
-                Developed a "Best Game Tonight" feature that highlights a recommended matchup instead of presenting all games with equal emphasis.
+                Developed a <strong>"Best Game Tonight"</strong> feature that highlights a recommended matchup instead of presenting every game with equal emphasis.
               </p>
             </div>
 
             <div>
               <h3 className="font-semibold text-white">
-                Dynamic Data Rendering
+                Interactive Game Calendar
               </h3>
               <p className="mt-2 text-zinc-400">
-                Built reusable components that dynamically render game information from live API data.
+                Built a dedicated calendar experience that lets users browse games by date and navigate between months, with dynamic loading and error states for schedule data.
+              </p>
+            </div>
+
+            <div>
+              <h3 className="font-semibold text-white">
+                Game Details &amp; Results
+              </h3>
+              <p className="mt-2 text-zinc-400">
+                Expanded game views to surface relevant matchup information including <strong>scores, game status, goal scorers, broadcast information, and playoff series context</strong> when available.
+              </p>
+            </div>
+
+            <div>
+              <h3 className="font-semibold text-white">
+                User Authentication
+              </h3>
+              <p className="mt-2 text-zinc-400">
+                Integrated <strong>Supabase Auth</strong> to support account creation, email confirmation, login, logout, and persistent authenticated sessions.
+              </p>
+            </div>
+
+            <div>
+              <h3 className="font-semibold text-white">
+                Protected User Profiles
+              </h3>
+              <p className="mt-2 text-zinc-400">
+                Implemented authenticated routing for user profile functionality, restricting protected content to signed-in users while redirecting unauthenticated visitors appropriately.
+              </p>
+            </div>
+
+            <div>
+              <h3 className="font-semibold text-white">
+                Dynamic Data &amp; Reusable Components
+              </h3>
+              <p className="mt-2 text-zinc-400">
+                Built reusable React components that transform live API responses into consistent game cards and other UI elements across NHL and PWHL data.
+              </p>
+            </div>
+
+            <div>
+              <h3 className="font-semibold text-white">
+                Responsive Navigation &amp; UI
+              </h3>
+              <p className="mt-2 text-zinc-400">
+                Created responsive navigation and mobile-friendly layouts so core game discovery, calendar, authentication, and profile features remain accessible across screen sizes.
+              </p>
+            </div>
+
+            <div>
+              <h3 className="font-semibold text-white">
+                Production Deployment
+              </h3>
+              <p className="mt-2 text-zinc-400">
+                Deployed the Next.js application through Vercel with production environment configuration, Supabase authentication redirects, and a custom puckbook.nicolesedillo.com subdomain.
               </p>
             </div>
           </div>
@@ -128,17 +195,20 @@ export default function HockeyGameTrackerPage() {
             "What game should I watch tonight?"
           </p>
           <p className="mt-4 leading-8 text-zinc-400">
-            This led to a design that emphasizes one featured matchup while keeping the remaining games easy to browse and compare.
+            This led to a clear information hierarchy that emphasizes one featured matchup while keeping the full schedule easy to browse and compare. As the project has expanded, I've carried this approach into features like calendar-based browsing, authentication, and responsive navigation to keep the experience focused as functionality grows.
           </p>
         </section>
 
         <section className="mt-12">
           <h2 className="text-2xl font-semibold">What I've Learned</h2>
           <p className="mt-4 leading-8 text-zinc-400">
-            This project has helped me think beyond displaying API data and focus more on product thinking and user decision-making.
+            This project has helped me move beyond simply consuming and displaying API data and think more holistically about how a production web application is designed, built, and maintained.
           </p>
           <p className="mt-4 leading-8 text-zinc-400">
-            As new features are added, I've gained experience balancing technical implementation with usability, information hierarchy, and interface design.
+            I've gained hands-on experience integrating multiple external APIs, working with dynamic data and application state, implementing authentication and protected routes with Supabase, and deploying a Next.js application to production.
+          </p>
+          <p className="mt-4 leading-8 text-zinc-400">
+            It has also strengthened my product thinking by requiring me to balance technical implementation with usability, information hierarchy, responsive design, and the needs of the end user.
           </p>
         </section>
 
