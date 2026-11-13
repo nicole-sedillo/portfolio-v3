@@ -18,7 +18,7 @@ export default function BlogPage() {
         <p className="mb-3 text-sm font-medium text-[#5EEAD4]">Writing</p>
         <h1 className="mb-4 text-4xl font-semibold tracking-tight md:text-5xl">Blog</h1>
         <p className="mb-12 max-w-2xl text-lg text-zinc-400">
-          Thoughts on front-end development, building things, and learning in public.
+          Notes on business, technology, and learning in public.
         </p>
 
         <div className="flex flex-col gap-4">
