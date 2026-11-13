@@ -50,16 +50,10 @@ export default function Home() {
         </p>
 
         <div className="mt-10 flex flex-wrap gap-4">
-          <a
-            href="#projects"
-            className="rounded-full bg-[#5EEAD4] px-5 py-3 text-sm font-semibold text-black transition [&:hover]:scale-[1.03] [&:hover]:opacity-90"
-          >
-            View Projects
-          </a>
 
           <a
             href="#contact"
-            className="rounded-full border border-zinc-800 px-5 py-3 text-sm font-semibold text-white transition [&:hover]:border-[#5EEAD4] [&:hover]:text-[#5EEAD4]"
+            className="rounded-full bg-[#5EEAD4] px-5 py-3 text-sm font-semibold text-black transition [&:hover]:scale-[1.03] [&:hover]:opacity-90"
           >
             Contact Me
           </a>
@@ -67,146 +61,7 @@ export default function Home() {
 
       </section>
 
-      <section className="mx-auto max-w-6xl px-6 pb-20 pt-4">
-        <div className="mb-10 max-w-2xl">
-          <p className="mb-3 text-sm font-medium text-[#5EEAD4]">
-            Process
-          </p>
-          <h2 className="text-3xl font-semibold tracking-tight md:text-4xl">
-            My Process
-          </h2>
-        </div>
-
-        <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-          <div className="rounded-2xl border border-zinc-800 bg-[#111111] p-6">
-            <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-full bg-[#5EEAD4] text-sm font-bold text-black">
-              1
-            </div>
-            <h3 className="mb-2 text-lg font-semibold">
-              Understand the business and audience
-            </h3>
-          </div>
-
-          <div className="rounded-2xl border border-zinc-800 bg-[#111111] p-6">
-            <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-full bg-[#5EEAD4] text-sm font-bold text-black">
-              2
-            </div>
-            <h3 className="mb-2 text-lg font-semibold">
-              Identify user needs and pain points
-            </h3>
-          </div>
-
-          <div className="rounded-2xl border border-zinc-800 bg-[#111111] p-6">
-            <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-full bg-[#5EEAD4] text-sm font-bold text-black">
-              3
-            </div>
-            <h3 className="mb-2 text-lg font-semibold">
-              Plan the content and user journey
-            </h3>
-          </div>
-
-          <div className="rounded-2xl border border-zinc-800 bg-[#111111] p-6">
-            <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-full bg-[#5EEAD4] text-sm font-bold text-black">
-              4
-            </div>
-            <h3 className="mb-2 text-lg font-semibold">
-              Design and build the solution
-            </h3>
-          </div>
-
-          <div className="rounded-2xl border border-zinc-800 bg-[#111111] p-6">
-            <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-full bg-[#5EEAD4] text-sm font-bold text-black">
-              5
-            </div>
-            <h3 className="mb-2 text-lg font-semibold">
-              Test, refine, and improve
-            </h3>
-          </div>
-        </div>
-      </section>
-
-      <section id="projects" className="mx-auto max-w-6xl px-6 py-20">
-        <div className="mb-10 max-w-2xl">
-          <p className="mb-3 text-sm font-medium text-[#5EEAD4]">
-            Selected Work
-          </p>
-          <h2 className="text-3xl font-semibold tracking-tight md:text-4xl">
-            Projects that show product thinking, UI detail, and real-world
-            constraints.
-          </h2>
-        </div>
-
-        <div className="grid gap-5 md:grid-cols-3">
-          {projects.map((project) => (
-            <a
-              href={project.href}
-              key={project.title}
-              className="group flex min-h-[300px] flex-col rounded-2xl border border-zinc-800 bg-[#111111] p-6 transition-all duration-300 ease-out [&:hover]:-translate-y-1 [&:hover]:border-[#5EEAD4] [&:hover]:shadow-xl [&:hover]:shadow-[#5EEAD4]/10"
-            >
-              <p className="text-xs font-medium uppercase tracking-wide text-zinc-500">
-                {project.eyebrow}
-              </p>
-
-               <div className="mb-6 mt-6 h-32 overflow-hidden rounded-xl border border-zinc-800 bg-zinc-900 relative">
-
-          {/* PORTAL */}
-          {project.type === "portal" && (
-            <div className="absolute inset-3 grid grid-cols-3 gap-2">
-              <div className="rounded bg-zinc-800" />
-              <div className="rounded bg-zinc-700" />
-              <div className="rounded bg-zinc-800" />
-              <div className="col-span-2 rounded bg-zinc-700" />
-              <div className="rounded bg-zinc-800" />
-            </div>
-          )}
-
-          {/* HOCKEY */}
-          {project.type === "hockey" && (
-            <div className="absolute inset-0 flex items-center justify-center gap-4 text-sm font-semibold">
-              <span className="rounded bg-zinc-800 px-3 py-1">VAN</span>
-              <span className="text-zinc-500">vs</span>
-              <span className="rounded bg-zinc-800 px-3 py-1">EDM</span>
-            </div>
-          )}
-
-          {/* INDAY */}
-          {project.type === "inday" && (
-            <div className="absolute inset-4 grid grid-cols-2 gap-2">
-              <div className="rounded bg-zinc-800" />
-              <div className="rounded bg-zinc-700" />
-              <div className="rounded bg-zinc-700" />
-              <div className="rounded bg-zinc-800" />
-            </div>
-          )}
-
-        </div>
-
-              <h3 className="mt-4 text-xl font-semibold">{project.title}</h3>
-
-              <p className="mt-3 leading-7 text-zinc-400">
-                {project.description}
-              </p>
-
-              <div className="mt-6 flex flex-wrap gap-2">
-                {project.tags.map((tag) => (
-                  <span
-                    key={tag}
-                    className="rounded-full border border-zinc-800 px-3 py-1 text-xs text-zinc-400"
-                  >
-                    {tag}
-                  </span>
-                ))}
-              </div>
-
-              <p className="mt-auto pt-8 text-sm font-medium text-[#5EEAD4]">
-                View case study →
-              </p>
-            </a>
-          ))}
-        </div>
-      </section>
-
-      <section id="about" className="mx-auto max-w-6xl px-6 py-20">
+      <section id="about" className="mx-auto max-w-6xl px-6 pb-20 pt-8">
         <div className="overflow-hidden rounded-2xl border border-zinc-800 bg-[#0B0B0B]">
           <div className="relative min-h-[460px] bg-gradient-to-b from-zinc-900 to-black p-8 md:p-10">
             <div className="pointer-events-none absolute bottom-0 left-0 w-full">
@@ -278,7 +133,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="contact" className="mx-auto max-w-6xl px-6 py-20">
+      <section id="contact" className="mx-auto max-w-6xl px-6 pb-20 pt-8">
         <div className="rounded-2xl border border-zinc-800 bg-[#111111] p-8 md:p-10">
           <p className="mb-3 text-sm font-medium text-[#5EEAD4]">Contact</p>
 
