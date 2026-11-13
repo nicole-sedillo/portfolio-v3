@@ -96,11 +96,15 @@ export default function Home() {
               <p className="mb-3 text-sm font-medium text-[#5EEAD4]">About</p>
 
               <h2 className="max-w-2xl text-3xl font-semibold tracking-tight md:text-4xl">
-                I'm a front-end developer who enjoys solving problems through thoughtful design and development.
+                I'm a business professional transitioning into accounting, with a background in technology, reporting, and operations.
               </h2>
 
               <p className="mt-5 max-w-2xl leading-8 text-zinc-400">
-                With a background in business and marketing, I approach projects by considering both the user experience and the goals behind the product. I enjoy building websites, web applications, and internal tools that make information easier to navigate and workflows easier to manage.
+                With a background in business administration, marketing, and web development, I bring an analytical and detail-oriented approach to my work. My experience includes preparing sales reports, organizing financial records, and developing internal tools that improve workflows and information management.
+              </p>
+
+              <p className="mt-5 max-w-2xl leading-8 text-zinc-400">
+                I'm currently building my accounting knowledge as I work toward the CPA designation, with an interest in financial reporting, bookkeeping, and accounting operations.
               </p>
 
               <div className="mt-10 grid gap-4 md:grid-cols-3">
@@ -110,15 +114,18 @@ export default function Home() {
                   </p>
                   <p className="mt-2 text-3xl font-semibold">2+ yrs</p>
                   <p className="mt-2 text-sm text-zinc-500">
-                    Web, product UI, and internal tools
+                    Business Operations & Reporting
                   </p>
                 </div>
 
                 <div className="rounded-2xl border border-zinc-800 bg-black/40 p-6 backdrop-blur">
                   <p className="text-xs uppercase tracking-wide text-zinc-500">
-                    Build Style
+                    Core Strengths
                   </p>
-                  <p className="mt-2 text-3xl font-semibold">Clean + Practical UI</p>
+                  <p className="mt-2 text-3xl font-semibold">Analytical & Detail-Oriented</p>
+                  <p className="mt-2 text-sm text-zinc-500">
+                    Reporting, Data Accuracy & Process Improvement
+                  </p>
                 </div>
 
                 <div className="rounded-2xl border border-zinc-800 bg-black/40 p-6 backdrop-blur">
@@ -138,11 +145,11 @@ export default function Home() {
           <p className="mb-3 text-sm font-medium text-[#5EEAD4]">Contact</p>
 
           <h2 className="text-3xl font-semibold tracking-tight md:text-4xl">
-            Let’s build something useful.
+            Let’s connect.
           </h2>
 
           <p className="mt-4 max-w-xl leading-7 text-zinc-400">
-            I'm currently looking for front-end and web development opportunities where I can keep learning, contribute to real products, and work alongside experienced teams.
+            I'm currently seeking opportunities in accounting, bookkeeping, and financial operations where I can apply my background in business, reporting, and administration while continuing to develop my accounting skills.
           </p>
 
           <div className="mt-8 flex flex-wrap gap-4 text-sm">
