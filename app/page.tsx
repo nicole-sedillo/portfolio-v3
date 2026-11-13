@@ -38,15 +38,15 @@ export default function Home() {
         <div className="pointer-events-none absolute right-0 top-20 h-64 w-64 rounded-full bg-[#5EEAD4]/10 blur-3xl" />
 
         <p className="mb-5 text-sm font-medium text-[#5EEAD4]">
-          Front-End Developer
+          Personal Portfolio
         </p>
 
         <h1 className="relative max-w-4xl text-4xl font-semibold leading-tight tracking-tight md:text-5xl">
-          I build responsive websites and web applications focused on usability, clarity, and user experience.
+          Building a career in accounting, backed by business and technology experience
         </h1>
 
         <p className="mt-6 max-w-2xl text-lg leading-8 text-zinc-400">
-          My background in marketing and business helps me bridge the gap between technical implementation and the goals of the people using the product.
+          I'm a business graduate transitioning into accounting and pursuing the CPA pathway. My background spans financial reporting support, administrative operations, data analysis, and digital systems.
         </p>
 
         <div className="mt-10 flex flex-wrap gap-4">
